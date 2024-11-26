@@ -1,5 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+// Book book1 = new Book("Alice in Wonderlnad");
+// Book book2 = new Book("Foundation");
+// Book book3 = new Book("Learning C#");
 
+Library library = new Library();
+
+// Main Loop
 while (true)
 {
 
@@ -15,6 +21,16 @@ while (true)
     }
     switch (userInput)
     {
+        case "list":
+            List<Book> availableBooks = library.ListAvaliableBooks();
+            foreach (var book in availableBooks)
+            {
+                Console.WriteLine($"Title: {book.Title}");
+            }
+            break;
+        // Book newBook = new Book("Foundation");
+        // Console.WriteLine($"Add a new book with title : {newBook.Title}");
+        // break;
         case "borrow":
             Console.WriteLine("borrrowing a book");
             break;
