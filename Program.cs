@@ -22,7 +22,7 @@ while (true)
             Console.WriteLine("return a book");
             break;
         default:
-            Console.Write("unrecognized command");
+            Console.WriteLine("unrecognized command");
             break;
     }
 }
