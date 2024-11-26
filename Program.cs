@@ -8,6 +8,17 @@ string userInput = Console.ReadLine();
 if (userInput == null){
     throw new Exception ("Could not read user input");
 }
+switch (userInput){
+    case "borrow":
+    Console.WriteLine("borrrowing a book");
+    break;
+    case "return":
+    Console.WriteLine("return a book");
+    break;
+    default:
+    Console.Write("unrecognized command");
+    break;
+}
 
-Console.WriteLine("User input");
-Console.WriteLine(userInput);
+//Console.WriteLine("User input");
+//Console.WriteLine(userInput);
