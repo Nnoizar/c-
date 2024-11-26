@@ -1,2 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+//når vi skriver dotnet run så kjører den første linja
+Console.WriteLine("please wright something then hit enter");
+//nå skriver vi noe
+string userInput = Console.ReadLine();
+
+//feilhåndtering
+if (userInput == null){
+    throw new Exception ("Could not read user input");
+}
+
+Console.WriteLine("User input");
+Console.WriteLine(userInput);
